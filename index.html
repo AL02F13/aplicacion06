@@ -18,7 +18,7 @@
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
   <script src="js/acciones.js" type="text/javascript"></script>
-  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+  <script src="phonegap.js" type="text/javascript"></script> 
  </head>
 
  <body>
@@ -31,9 +31,11 @@
 
   <div data-role="main" class="ui-content">
    <div align="center">
-    <div style="width:50%">
-     <a href="#" id="btnvibrar" class="ui-btn">vibrar</a>
+    <div style="width:50%" data-role="controlgroup" data-type="vertical">
+     <a href="#" id="btnvibrar" class="ui-btn">Vibrar</a>
      <a href="#" id="btnbeep" class="ui-btn">Beep</a>
+      <a href="#barrer" id="btnbarrer" class="ui-btn">barrer</a>
+     <a href="#" id="btneventos" class="ui-btn">eventos</a>
     </div>
    </div>
   </div>
@@ -44,5 +46,44 @@
  </div>  
  <!-- Principal -->
 
+<!-- barrer -->
+ <div data-role="page" id="barrer" >   
+  <div data-role="header">
+    <h1>Barrer</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+   <div id="izquierda" style="background-color:#093">
+   <h1 align="center" style="color:#FFF">Izquierda</h1>
+   </div>
+   <div id="derecha" style="background-color:#06F">
+   <h1 align="center" style="color:#FFF">Derecha</h1>
+   </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>@Damris</h1>
+  </div>
+ </div>  
+ <!-- barrer -->
+ 
+ 
+ <!-- eventos -->
+ <div data-role="page" id="eventos" >   
+  <div data-role="header">
+    <h1>eventos</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+   <div id="listado">
+   </div>
+  
+  </div>
+
+  <div data-role="footer">
+    <h1>@Damris</h1>
+  </div>
+ </div>  
+ <!-- eventos -->
  </body>
 </html> 
